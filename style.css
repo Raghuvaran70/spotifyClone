@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+    height:100vh;
+    position: relative;
+}
+
+nav{
+    height:65px;
+    background-color: black;
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav ul{
+     display: flex;
+     list-style-type: none;
+     color:white;
+     align-items: center;
+}
+
+nav ul li{
+    padding: 10px 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.container{
+    min-height: 65vh;
+    width:70% ;
+    color: white;
+    background-color: black;
+    margin: 40px auto;
+    border-radius:15px;
+    padding: 30px;
+    background-image: url('bg.jpg');
+    background-position-x: -300px;
+    background-position-y: -100px ;
+}
+
+.bottom{
+    position:sticky;
+    height: 120px;
+    background-color:aqua;
+    bottom:0px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+}
+
+.icons{
+    margin: 10px;
+}
+.icons img{
+    width:50px;
+    height: 50px;
+    /* background-color: white; */
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 50px;
+}
+.songItem{
+    height:50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    width:45%;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.songItem .image{
+    width:43px;
+    margin:0 30px;
+    border-radius: 34px;
+}
+
+.songListPlay{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-right:50px;
+}
+.songListPlay .playButton{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left:10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}

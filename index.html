@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Listen to music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="spotify">Spotify</li>
+            <li>About</li>
+            <li>Home</li>
+        </ul>
+    </nav>
+
+    <!--Container for songs-->
+    <div class="container">
+        <div class="songsList">
+            <h1>Songs list NCR - No Copy Right</h1>
+            <div class="songItemContainer"> 
+                <div class="songItem">
+                    <img src="./covers/10.jpg" alt="1" class="image">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34</span><img id="0" src="circle-play-regular.svg" alt="play" class="playButton"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/10.jpg" alt="1" class="image">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34</span><img id="1" src="circle-play-regular.svg" alt="play" class="playButton"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/10.jpg" alt="1" class="image">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34</span><img id="2" src="circle-play-regular.svg" alt="play" class="playButton"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/10.jpg" alt="1" class="image">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34</span><img id="3" src="circle-play-regular.svg" alt="play" class="playButton"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/10.jpg" alt="1" class="image">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34</span><img id="4" src="circle-play-regular.svg" alt="play" class="playButton"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/10.jpg" alt="1" class="image">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34</span><img id="5" src="circle-play-regular.svg" alt="play" class="playButton"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <!--Bootom - Song Navigation-->
+    <div class="bottom">
+        <input type="range" name="range" value="0" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <!-- font awesome icons -->
+            <img src="circle-left-regular.svg" id="previous" alt="left">
+            <img src="circle-play-regular.svg" alt="play" id="masterPlay">
+            <img src="circle-right-regular.svg" id="next" alt="right">
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="gif" id="gif">let me love you - Justin
+        </div>
+    </div>
+    <!-- <script src="https://kit.fontawesome.com/9d3f886f4d.js" crossorigin="anonymous"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
