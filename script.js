@@ -25,7 +25,7 @@ songItems.forEach((element,i)=>{
 
 })
 
-// audioElement.play();
+
 
 //Handle play/pause click
 masterPlay.addEventListener('click',()=>{
@@ -60,7 +60,7 @@ const makeAllPlays = ()=>{
     })
 }
 
-
+//playButton in the songItems
 Array.from(document.getElementsByClassName('playButton')).forEach((element)=>{
     element.addEventListener('click',(e)=>{
         // console.log(e.target);
@@ -74,6 +74,7 @@ Array.from(document.getElementsByClassName('playButton')).forEach((element)=>{
     })
 });
 
+//next button in the controls present in .bottom
 (document.querySelector('#next')).addEventListener('click',()=>{
     if(songIndex>=5){
         songIndex=0;
@@ -87,7 +88,7 @@ Array.from(document.getElementsByClassName('playButton')).forEach((element)=>{
 
 })
 
-
+//previous button in the controls present in .bottom
 (document.querySelector('#previous')).addEventListener('click',()=>{
     if(songIndex<=0){
         songIndex=5;
